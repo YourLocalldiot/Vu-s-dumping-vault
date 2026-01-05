@@ -1,0 +1,59 @@
+/* Bigger navbar */
+.navbar {
+  padding: 0.5rem 0;
+  background-color: #0b1e33;
+}
+
+/* Bigger brand text */
+.navbar-brand {
+  font-size: 1.6rem;
+}
+
+/* Bigger nav links */
+.nav-link {
+  font-size: 1.1rem; /* increase text size */
+  padding: 0.9rem 1.4rem; /* more space around each link */
+}
+
+/* Bigger logo */
+.navbar-brand img {
+  width: 40px;
+  height: 40px;
+}
+h1,
+h2,
+h3,
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+/* Body font */
+body {
+  font-family: Consolas, monospace;
+}
+/* Bigger nav links */
+/* Extra spacing between links (horizontal) */
+.navbar-nav .nav-item {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+/* Ensure everything in navbar is vertically aligned */
+.navbar,
+.navbar .container,
+.navbar-brand,
+.navbar-collapse,
+.navbar-nav {
+  align-items: center;
+}
+
+/* Keep links container aligned with logo */
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+}
+
+/* Push links to the right but keep same vertical line */
+.navbar-nav {
+  margin-left: auto;
+}

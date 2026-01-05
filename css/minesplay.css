@@ -1,0 +1,59 @@
+/* ================== GAME GRID ================== */
+
+#game {
+  display: grid;
+  gap: 4px;
+  width: max-content;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* ================== CELLS ================== */
+
+.cell {
+  width: 42px;
+  height: 42px;
+  background: #6c757d;
+  border-radius: 6px;
+  border: 1px solid #555;
+  color: white;
+  font-weight: bold;
+  font-family: Consolas, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* ================== STATES ================== */
+
+.cell.hidden {
+  visibility: hidden;
+}
+
+.cell.revealed {
+  background: #e9ecef;
+  color: #000;
+  cursor: default;
+}
+
+.cell.mine {
+  background: #dc3545;
+}
+
+.cell.flagged {
+  background: #ffc107;
+  color: #000;
+}
+
+/* ================== NUMBER COLORS ================== */
+
+.n1 { color: #0d6efd; }
+.n2 { color: #198754; }
+.n3 { color: #dc3545; }
+.n4 { color: #0a58ca; }
+.n5 { color: #6f4e37; }
+.n6 { color: #20c997; }
+.n7 { color: #000000; }
+.n8 { color: #6c757d; }

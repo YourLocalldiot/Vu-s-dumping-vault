@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>VDV | Minesweeper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font: Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="../css/minesplay.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../img/vdv logo colored buffered.png"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container d-flex align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="../img/vdv logo colored buffered.png"
+            alt="Logo"
+            class="me-2"
+          />
+          Vu's Dumping Vault
+        </a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+
+            <!-- DROPDOWN -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="projectsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./projects.html">Projects</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./mines.html">Minesweeper</a>
+                </li>
+                <li><a class="dropdown-item" href="#">School</a></li>
+                <li><a class="dropdown-item" href="#">Experiments</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5 text-center">
+      <h1 class="mb-3" style="font-family: Montserrat">Minesweeper</h1>
+      <div id="modes" class="mb-4 d-flex justify-content-center gap-2"></div>
+      <div class="d-flex justify-content-center gap-4 mb-3">
+        <div>💣 <span id="mineCount">0</span></div>
+        <div>⏱ <span id="timer">0</span>s</div>
+        <button class="btn btn-sm btn-secondary" onclick="restart()">
+          Restart
+        </button>
+      </div>
+
+      <div id="game" class="mx-auto"></div>
+      <p id="status" class="mt-3 fw-bold"></p>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/minesplay.js" defer></script>
+  </body>
+</html>
